@@ -12,9 +12,9 @@ public class MethodExample2 {
 
 		getArea(3.5);
 
-		int res = getMAX(a, b);
-		System.out.println("큰수는 : " + res);
-
+		System.out.println("큰수는 : " + getMax(10, 50));
+		
+		
 		System.out.println("나눈값 : " + divide(17, 3));
 	}
 
@@ -26,20 +26,20 @@ public class MethodExample2 {
 	}
 
 	// 두 정수를 입력받아서 두 수의 곱을 console 출력
-	public static void multi(int i1, int i2) {
-		int multi = i1 * i2;
+	public static void multi(int n1, int n2) {
+		int multi = n1 * n2;
 		System.out.println("두수의 합: " + multi);
 	}
 
 	// 정사각형 너비를 계산해주는 메소드.
 	public static void getArea(double side) {
-		double Anw = side * side;
-		System.out.println("정사각형의 넓이: " + Anw);
+		double anw = side * side;
+		System.out.println("정사각형의 넓이: " + anw);
 	}
 
 	// 두수중에서 큰 값을 반환해주는 메소드. (반환은 return)
-	public static int getMAX(int num1, int num2) {
-		int result = (num1 >= num2) ? num1 : num2;
+	public static int getMax(int n1, int n2) {
+		int result = (n1 >= n2) ? n1 : n2;
 		return result;
 	}
 

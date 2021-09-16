@@ -3,35 +3,37 @@ package reference;
 public class MethodExample4 {
 	public static void main(String[] args) {
 		int[] scores = { 88, 67, 92, 73, 58 };
-		// 최대값 구하기.
-		int maxVal = 0;
+		// 최대값 구해봐라.
+		int maxValue = 0;
 		boolean isTrue = false;
-
-		for (int i = 0; i < scores.length; i++) {
-			isTrue = maxVal < scores[i];
-			if (isTrue) {
-				maxVal = scores[i];
+		
+		for(int i =0 ; i < scores.length; i++){
+			isTrue = maxValue < scores[i];
+			if(isTrue) {
+				maxValue = scores[i];
 			}
 		}
-		System.out.println("최대값: " + maxVal);
+		System.out.println("최대값: " + maxValue);
 		System.out.println("끝 1");
-
+		
+		
 		int[] anotherAry = { 55, 82, 34, 19, 47, 89 };
-		maxVal = getMaxValue(anotherAry);
-		System.out.println("최대값: " + maxVal);
+		maxValue = getMaxValue(anotherAry);
+		System.out.println("최대값: " + maxValue);
 		System.out.println("끝 2");
 	}
-
+	
 	public static int getMaxValue(int[] ary) {
-		int maxVal = 0;
+		int maxValue = 0;
 		boolean isTrue = false;
-
-		for (int i = 0; i < ary.length; i++) {
-			isTrue = maxVal < ary[i];
-			if (isTrue) {
-				maxVal = ary[i];
+		
+		for(int i =0 ; i < ary.length; i++){
+			isTrue = maxValue < ary[i];
+			if(isTrue) {
+				maxValue = ary[i];
 			}
 		}
-		return maxVal;
+		return maxValue;
 	}
+	
 }

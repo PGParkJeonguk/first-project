@@ -5,40 +5,42 @@ public class ArrayExample {
 		// 학생 30명
 		// int s1 ~s30;
 		// int num, String str;
-		int[] intAry = {1,2,3,4,5};
-		System.out.println(intAry[0]);
-		System.out.println(intAry[1]);
-		System.out.println(intAry[2]);
-		System.out.println(intAry[3]);
-		System.out.println(intAry[4]);
+		int [] Ary = {1,2,3,4,5};
+		System.out.println(Ary[0]);
+		System.out.println(Ary[1]);
+		System.out.println(Ary[2]);
+		System.out.println(Ary[3]);
+		System.out.println(Ary[4]);
 		
 		System.out.println("=======다시======");
 		
-		intAry[0] = 6;
-		intAry[1] = 7;
-		intAry[2] = 8;
-		intAry[3] = 9;
-		intAry[4] = 10;
+		//intAry[0] = 6;
+		//intAry[1] = 7;
+		//intAry[2] = 8;
+		//intAry[3] = 9;
+		//intAry[4] = 10;
 		
-		for(int i = 0; i < 5; i++) {
-			System.out.println(intAry[i]);
+		for(int i = 0; i<5; i++) {
+			System.out.println(Ary[i]);
 		}
+		System.out.println("=======다시======");
 		
-		byte[] byteAry = {1, 2, 3};
-		for(int i=0; i<3; i++) {
-			System.out.println("byte배열: "+ byteAry[i]);
+		byte[] byteAry = {1,2,3};
+		for(int i = 0; i<3 ; i++) {
+			System.out.println(byteAry[i]);
 		}
+		System.out.println("=======다시======");
 		
-		String[] strAry = {"Hello", "World", "Nice"};
-		for(int i  = 0; i<3; i++) {
-			System.out.println("Stirng배열: " + strAry[i]);
+		String[] strAry = {"A" , "B", "C" };
+		for(int i =0; i<3 ; i++) {
+			System.out.println(strAry[i]);
 		}
-		//String은 문자열만 , int는 정수만!
+		System.out.println("=======다시======");
+		
 		strAry = new String[] {"Hong","kim","Park"};
-		for(int i  = 0; i<3; i++) {
-			System.out.println("Stirng배열: " + strAry[i]);
+		for(int i = 0; i<3; i++) {
+			System.out.println(strAry[i]);
 		}
-		//다른값을 담을때 위에처럼 한다.
 		
 		double[] dblAry;
 		dblAry = new double[] {1, 2.3, 5};
@@ -48,6 +50,5 @@ public class ArrayExample {
 		for(int i=0; i < fltAry.length; i++) {
 			System.out.println(fltAry[i]);
 		}
-		
 	}
 }
